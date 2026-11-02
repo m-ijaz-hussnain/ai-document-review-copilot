@@ -1,0 +1,413 @@
+{
+  "dataset_version": "1.0",
+  "cases": [
+    {
+      "case_id": "case-001",
+      "title": "data protection sample 1",
+      "text": "This data protection document states the data retention period clearly: the applicable data retention period is defined in section 2 and reviewed annually. All parties must comply.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-002",
+      "title": "vendor contract sample 2",
+      "text": "This vendor contract document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-003",
+      "title": "vendor contract sample 3",
+      "text": "This vendor contract document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "liability cap"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-004",
+      "title": "hr policy sample 4",
+      "text": "This hr policy document states the termination clause clearly: the applicable termination clause is defined in section 2 and reviewed annually. All parties must comply.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-005",
+      "title": "security policy sample 5",
+      "text": "This security policy document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-006",
+      "title": "data protection sample 6",
+      "text": "This data protection document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-007",
+      "title": "vendor contract sample 7",
+      "text": "This vendor contract document states the termination clause clearly: the applicable termination clause is defined in section 2 and reviewed annually. All parties must comply.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-008",
+      "title": "vendor contract sample 8",
+      "text": "This vendor contract document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "liability cap"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-009",
+      "title": "hr policy sample 9",
+      "text": "This hr policy document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-010",
+      "title": "security policy sample 10",
+      "text": "This security policy document states the data retention period clearly: the applicable data retention period is defined in section 2 and reviewed annually. All parties must comply.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-011",
+      "title": "data protection sample 11",
+      "text": "This data protection document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-012",
+      "title": "vendor contract sample 12",
+      "text": "This vendor contract document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-013",
+      "title": "vendor contract sample 13",
+      "text": "This vendor contract document states the liability cap clearly: the applicable liability cap is defined in section 2 and reviewed annually. All parties must comply.",
+      "requires_phrases": [
+        "liability cap"
+      ],
+      "expected_categories": [],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-014",
+      "title": "hr policy sample 14",
+      "text": "This hr policy document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-015",
+      "title": "security policy sample 15",
+      "text": "This security policy document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-016",
+      "title": "data protection sample 16",
+      "text": "This data protection document states the data retention period clearly: the applicable data retention period is defined in section 2 and reviewed annually. All parties must comply.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-017",
+      "title": "vendor contract sample 17",
+      "text": "This vendor contract document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-018",
+      "title": "vendor contract sample 18",
+      "text": "This vendor contract document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "liability cap"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-019",
+      "title": "hr policy sample 19",
+      "text": "This hr policy document states the termination clause clearly: the applicable termination clause is defined in section 2 and reviewed annually. All parties must comply.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-020",
+      "title": "security policy sample 20",
+      "text": "This security policy document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-021",
+      "title": "data protection sample 21",
+      "text": "This data protection document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-022",
+      "title": "vendor contract sample 22",
+      "text": "This vendor contract document states the termination clause clearly: the applicable termination clause is defined in section 2 and reviewed annually. All parties must comply.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-023",
+      "title": "vendor contract sample 23",
+      "text": "This vendor contract document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "liability cap"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-024",
+      "title": "hr policy sample 24",
+      "text": "This hr policy document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-025",
+      "title": "security policy sample 25",
+      "text": "This security policy document states the data retention period clearly: the applicable data retention period is defined in section 2 and reviewed annually. All parties must comply.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-026",
+      "title": "data protection sample 26",
+      "text": "This data protection document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-027",
+      "title": "vendor contract sample 27",
+      "text": "This vendor contract document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-028",
+      "title": "vendor contract sample 28",
+      "text": "This vendor contract document states the liability cap clearly: the applicable liability cap is defined in section 2 and reviewed annually. All parties must comply.",
+      "requires_phrases": [
+        "liability cap"
+      ],
+      "expected_categories": [],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-029",
+      "title": "hr policy sample 29",
+      "text": "This hr policy document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-030",
+      "title": "security policy sample 30",
+      "text": "This security policy document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-031",
+      "title": "data protection sample 31",
+      "text": "This data protection document states the data retention period clearly: the applicable data retention period is defined in section 2 and reviewed annually. All parties must comply.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-032",
+      "title": "vendor contract sample 32",
+      "text": "This vendor contract document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-033",
+      "title": "vendor contract sample 33",
+      "text": "This vendor contract document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "liability cap"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-034",
+      "title": "hr policy sample 34",
+      "text": "This hr policy document states the termination clause clearly: the applicable termination clause is defined in section 2 and reviewed annually. All parties must comply.",
+      "requires_phrases": [
+        "termination clause"
+      ],
+      "expected_categories": [],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-035",
+      "title": "security policy sample 35",
+      "text": "This security policy document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    },
+    {
+      "case_id": "case-036",
+      "title": "data protection sample 36",
+      "text": "This data protection document describes general procedures and responsibilities for staff. It covers roles, approvals and record keeping in detail.",
+      "requires_phrases": [
+        "data retention period"
+      ],
+      "expected_categories": [
+        "missing_clause"
+      ],
+      "notes": "synthetic labelled case"
+    }
+  ]
+}
