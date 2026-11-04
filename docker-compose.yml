@@ -1,0 +1,42 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment: { POSTGRES_DB: copilot, POSTGRES_USER: copilot, POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-copilot_dev_password}" }
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U copilot"], interval: 5s, timeout: 5s, retries: 10 }
+  redis:
+    image: redis:7-alpine
+    healthcheck: { test: ["CMD", "redis-cli", "ping"], interval: 5s, timeout: 3s, retries: 10 }
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: "postgres://copilot:${POSTGRES_PASSWORD:-copilot_dev_password}@db:5432/copilot"
+      CELERY_BROKER_URL: "redis://redis:6379/0"
+      CELERY_RESULT_BACKEND: "redis://redis:6379/0"
+      CELERY_TASK_ALWAYS_EAGER: "false"
+      AI_PROVIDER: "${AI_PROVIDER:-mock}"
+      BEDROCK_MODEL_ID: "${BEDROCK_MODEL_ID:-}"
+      AWS_REGION: "${AWS_REGION:-us-east-1}"
+      DJANGO_SECRET_KEY: "${DJANGO_SECRET_KEY:-dev-only-change-me}"
+    volumes: [private_media:/app/private_media]
+    ports: ["8000:8000"]
+    depends_on: { db: { condition: service_healthy }, redis: { condition: service_healthy } }
+    command: sh -c "python manage.py migrate && python manage.py seed_demo && gunicorn config.wsgi:application --bind 0.0.0.0:8000"
+  worker:
+    build: ./backend
+    environment:
+      DATABASE_URL: "postgres://copilot:${POSTGRES_PASSWORD:-copilot_dev_password}@db:5432/copilot"
+      CELERY_BROKER_URL: "redis://redis:6379/0"
+      CELERY_RESULT_BACKEND: "redis://redis:6379/0"
+      CELERY_TASK_ALWAYS_EAGER: "false"
+      AI_PROVIDER: "${AI_PROVIDER:-mock}"
+      BEDROCK_MODEL_ID: "${BEDROCK_MODEL_ID:-}"
+      AWS_REGION: "${AWS_REGION:-us-east-1}"
+    volumes: [private_media:/app/private_media]
+    depends_on: { db: { condition: service_healthy }, redis: { condition: service_healthy }, backend: { condition: service_started } }
+    command: celery -A config worker --loglevel=info
+  frontend:
+    build: ./frontend
+    ports: ["5173:80"]
+    depends_on: [backend]
+volumes: { pgdata: {}, private_media: {} }

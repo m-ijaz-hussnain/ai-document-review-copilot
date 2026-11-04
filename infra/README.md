@@ -1,0 +1,2 @@
+# Infrastructure notes
+Local: use the root `docker-compose.yml`. AWS: see `docs/deployment.md` (ECS Fargate, RDS PostgreSQL with the pgvector extension enabled, ElastiCache Redis, ALB + HTTPS, Secrets Manager, least-privilege task roles). No Terraform/CloudFormation stack is shipped as "verified" — the deployment doc gives the architecture and console/CLI steps so nothing here claims infrastructure that was never applied.
